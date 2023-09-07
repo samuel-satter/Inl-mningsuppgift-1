@@ -1,4 +1,10 @@
-body, h1, h2, h3, p, ul, li {
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -10,7 +16,7 @@ body {
 
 header {
     background-color: #080a12;
-    color: #FFFFFF;    
+    color: #FFFFFF;
     padding: 20px;
     text-align: center;
 }
@@ -20,18 +26,19 @@ ul {
     margin: 0;
     padding: 0;
     color: #fff;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: #fff;
     padding: 8px 16px;
     text-decoration: none;
-  }
-  li a:hover {
+}
+
+li a:hover {
     background-color: #555;
     color: #007bff;
-  }
+}
 
 main {
     padding: 20px;
@@ -47,12 +54,13 @@ article {
     padding-right: 20px;
     color: #fff;
     margin-right: 2%;
+    min-width: 70%;
 }
 
 aside {
     background-color: #eee;
     padding: 10px;
-    max-width: 30%;
+
 }
 
 footer {
@@ -78,12 +86,6 @@ h2 {
     margin-left: 3%;
 }
 
-
-
-.image-div {
-    margin-top: 3%;
-}
-
 #image-1 {
     width: auto;
     margin-top: 0.5%;
@@ -91,20 +93,75 @@ h2 {
     max-width: 50%;
 }
 
-img {
+
+
+.div-gridtest {
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    margin-top: 3%;
+    grid-template-columns: 0.5fr 0.25 0.25fr;
+    justify-content: center;
+    column-gap: 2%;
+
+}
+
+.grid-1 {
+    grid-column-start: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.grid-2 {
+    grid-column-start: 2;
+}
+
+.grid-3 {
+    grid-column-start: 3;
+}
+
+.image-1 {
+    object-fit: cover;
     max-width: 100%;
-    height: auto;
+    margin-right: 1%;
 }
 
 @media (max-width: 786px) {
-    body {
-        font-size: 16px;
-    }
+
     header {
         text-align: center;
     }
+
+    body {
+        font-size: 16px;
+    }
+
     main {
         flex-direction: column;
+    }
+
+
+    aside {
+        display: block;
+    }
+
+    .grid-container {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    .grid-2 {
+        margin-top: 1%;
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -131,12 +188,19 @@ img {
     nav li {
         margin: 0 10px;
     }
+
+    .grid-3 {
+        display: block;
+        width: 100%;
+        margin-top: 1%;
+    }
 }
 
 @media (min-width: 1025) {
     body {
         font-size: 20px;
     }
+
     header {
         display: flex;
         justify-content: space-between;
