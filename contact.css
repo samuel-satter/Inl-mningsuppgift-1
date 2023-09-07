@@ -5,6 +5,10 @@ a {
     margin-bottom: auto;
 }
 
+a:visited {
+    color: blue;
+}
+
 a:hover {
     color: white;
 }

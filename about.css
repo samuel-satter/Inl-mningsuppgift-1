@@ -6,15 +6,28 @@ h1 {
 
 p {
     color: white;
+    font-size: medium;
 }
 
 p:active {
-    background-color: black; 
+    background-color: white; 
+    color: black;
 }
 
 div {
     margin-top: 20px;
-   
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.link-container:link {
+    margin-top: 1%;
+    margin-left: 45%;
+    color: white;
+}
+
+.link-container:visited {
+    color: gray;
 }
 
 a {
@@ -23,4 +36,17 @@ a {
 
 a:hover {
     color: cyan;
+}
+
+h3 {
+    color: white;
+}
+
+h3:active {
+    background-color: white;
+    color: black;
+}
+
+li {
+    margin-left: 2%;
 }
