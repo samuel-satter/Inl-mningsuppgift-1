@@ -1,0 +1,26 @@
+@import url(style.css);
+
+h1 {
+    color: aliceblue;
+}
+
+p {
+    color: white;
+}
+
+p:active {
+    background-color: black; 
+}
+
+div {
+    margin-top: 20px;
+   
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: cyan;
+}

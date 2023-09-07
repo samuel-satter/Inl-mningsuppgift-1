@@ -1,0 +1,153 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #12192B;
+}
+
+header {
+    background-color: #080a12;
+    color: #FFFFFF;    
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+  }
+  
+  li a {
+    display: block;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #555;
+    color: #007bff;
+  }
+
+main {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    max-height: 40%;
+}
+
+article {
+    flex: 2;
+    padding-right: 20px;
+    color: #fff;
+    margin-right: 2%;
+}
+
+aside {
+    background-color: #eee;
+    padding: 10px;
+    max-width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+h2 {
+    color: white;
+}
+
+#bullet-div {
+    margin-top: 40px;
+}
+
+#bullet-list {
+    color: white;
+    font-style: italic;
+    list-style: square;
+    margin: 2px;
+    margin-left: 3%;
+}
+
+
+
+.image-div {
+    margin-top: 3%;
+}
+
+#image-1 {
+    width: auto;
+    margin-top: 0.5%;
+    max-height: 25%;
+    max-width: 50%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 786px) {
+    body {
+        font-size: 16px;
+    }
+    header {
+        text-align: center;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: xx-large;
+    }
+
+    nav ul {
+        font-size: medium;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+}
+
+@media (min-width: 1025) {
+    body {
+        font-size: 20px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0 20px;
+    }
+}
